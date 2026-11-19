@@ -116,7 +116,7 @@ function goToPage(state: PaginationState, page: number): void {
     state.currentPage = newPage;
     showPage(state);
     // scroll the scrollable parent to top
-    const scrollParent = state.container.closest('.posts-panel, .congeries') || state.container;
+    const scrollParent = state.container.closest('.posts-panel') || state.container;
     scrollParent.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

@@ -4,7 +4,6 @@ use axum::http::StatusCode;
 use axum::response::{Html, IntoResponse, Response};
 
 pub mod about;
-pub mod congeries;
 pub mod error;
 pub mod feed;
 pub mod home;
